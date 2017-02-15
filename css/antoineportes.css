@@ -1,10 +1,28 @@
-.index_body {	
-				background-color: #000000;
-				background-image: url('http://i.imgur.com/8PfjZYZ.png');
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-				background-position: center top; 
-}
-.index_div {
-				text-align:center;position:relative;
-}
+/* !--INDEX-- */
+	.index_body {	
+		background-color: #000000;
+		background-image: url("http://i.imgur.com/8PfjZYZ.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center top; 
+	}
+	.index_div {
+		text-align:center;
+		position:relative;
+	}
+	
+/* !--  GLOBAL LAYOUT -- */
+	.global_body {	
+		background-color: #000000;
+		background-image: url("http://i.imgur.com/oeMDYcg.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center center; 
+	}
+	/* !-- top menu -- */
+		.top_menu {
+			
+		}
+		#lang_switch{
+			
+		}
