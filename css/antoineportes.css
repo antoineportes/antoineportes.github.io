@@ -5,8 +5,6 @@
 				background-attachment: fixed;
 				background-position: center top; 
 }
-.index_table {
-				border-collapse: collapse;
-				align-content: center;
-				position: fixed;
+.index_div {
+				text-align:center;position:relative;
 }
