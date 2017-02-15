@@ -6,6 +6,6 @@
 				background-position: center top; 
 }
 .index_div {
-				align-self: center top;
-				position: absolute;
+				align-self: center;
+				position: fixed;
 }
