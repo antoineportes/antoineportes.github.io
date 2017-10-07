@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<!--HOME-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.7</priority>
+		
+	</url>
+	
+	<!--FRANÇAIS
+	
+	About (FR)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/fr/index.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.6</priority>
+		
+	</url>
+	
+	<!--Sounds (FR)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/fr/sounds.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.5</priority>
+		
+	</url>
+	
+	<!--Contact (FR)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/fr/contact.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.4</priority>
+		
+	</url>
+	
+	<!--Links (FR)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/fr/links.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.3</priority>
+		
+	</url>
+	
+	<!--ENGLISH
+	
+	About (EN)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/en/index.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.6</priority>
+		
+	</url>
+	
+	<!--Sounds (EN)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/en/sounds.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.5</priority>
+		
+	</url>
+	
+	<!--Contact (EN)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/en/contact.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.4</priority>
+		
+	</url>
+	
+	<!--Links (EN)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/en/links.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.3</priority>
+		
+	</url>
+	
+	<!--DEUTSCH
+	
+	About (DE)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/de/index.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.6</priority>
+		
+	</url>
+	
+	<!--Sounds (DE)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/de/sounds.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.5</priority>
+		
+	</url>
+	
+	<!--Contact (DE)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/de/contact.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.4</priority>
+		
+	</url>
+	
+	<!--Links (DE)-->
+	<url>
+	
+		<loc>http://wwww.antoineportes.com/de/links.htm</loc>
+		
+		<lastmod>2017-10-04</lastmod>
+		
+		<changefreq>monthly</changefreq>
+		
+		<priority>0.3</priority>
+		
+	</url>
+
+</urlset>
