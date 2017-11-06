@@ -1,105 +1,3 @@
-/* !--INDEX-- */
-	body.home{	
-		background-color: #000000;
-		background-image: url('https://orig00.deviantart.net/59b3/f/2017/287/b/1/wp0_by_antoineportes-dbqj8wu.png');
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center top;
-		background-size:50%;
-		
-		color:#FFFFFF;
-		font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-		text-align:center;
-	}
-		.home table{
-			width:100%;
-		}
-		.hometop{
-			width:100%;
-		}
-		.homemain{
-			width:100%;
-		}
-			td#fr{
-				width:33%;
-			}
-			td#en{
-				width:34%;
-			}
-			td#de{
-				width:33%;
-			}
-		.hometop{
-			padding-top:5%;		
-		}
-			.hometop h2{
-				line-height:200%;
-			}
-		#en, #fr, #de{
-			padding-top:7.5%;
-		}
-		.homebottom{
-			position:fixed;
-			left:0;
-			bottom:0;
-			width:100%;
-			font-size:0.65em;
-			padding-bottom:0.5%;
-			text-shadow:0px -3px 5px #000000, 0px 3px 5px #000000,-3px 0px 5px #000000,3px 0px 5px #000000;
-		}
-		
-		
-			.home h1, .home h2{
-				display:inline;
-				font-weight:normal;
-			}
-			.home h1{
-				text-shadow:0px -5px 5px #000000, 0px 5px 5px #000000,-5px 0px 5px #000000,5px 0px 5px #000000;
-				font-size:5.47em;
-			}
-			.home h2{
-				text-shadow:0px -5px 5px #000000, 0px 5px 5px #000000,-5px 0px 5px #000000,5px 0px 5px #000000;
-				font-size:3.25em;
-			}
-			
-			.home a:link{
-				color:#FFFFFF;
-				cursor:pointer;
-				text-shadow:0px -3px 5px #000000, 0px 3px 5px #000000,-3px 0px 5px #000000,3px 0px 5px #000000;
-				font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-				text-decoration:none;
-				-webkit-transition-duration: 0.4s; /* Safari */
-				transition-duration: 0.4s;
-			}
-			.home a:visited{
-				color:#FFFFFF;
-				cursor:pointer;
-				text-shadow:0px -3px 5px #000000, 0px 3px 5px #000000,-3px 0px 5px #000000,3px 0px 5px #000000;
-				font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-				text-decoration:none;
-				-webkit-transition-duration: 0.4s; /* Safari */
-				transition-duration: 0.4s;
-			}
-			.home a:hover{	
-				color:#000000;
-				cursor:pointer;
-				text-shadow:0px -3px 5px #FFFFFF, 0px 3px 5px #FFFFFF,-3px 0px 5px #FFFFFF,3px 0px 5px #FFFFFF;
-				font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-				text-decoration:none;
-				-webkit-transition-duration: 0.4s; /* Safari */
-				transition-duration: 0.4s;
-			}
-			.home a:active{
-				color:#FFFFFF;
-				cursor:pointer;
-				text-shadow:0px -3px 5px #FFFFFF, 0px 3px 5px #FFFFFF,-3px 0px 5px #FFFFFF,3px 0px 5px #FFFFFF;
-				font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-				text-decoration:none;
-				-webkit-transition-duration:0.2s; /* Safari */
-				transition-duration:0.2s;					
-			}
-
-			
 /* !--  GLOBAL LAYOUT -- */
 	body.global{	
 		background-color: #000000;
@@ -253,6 +151,7 @@
 					font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 					text-decoration:none;
 					-webkit-transition-duration: 0.4s; /* Safari */
+					-moz-transition-duration: 0.4s; /* Mozilla */
 					transition-duration: 0.4s;
 				}
 				#phone:hover{	
@@ -262,6 +161,7 @@
 					font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 					text-decoration:none;
 					-webkit-transition-duration: 0.4s; /* Safari */
+					-moz-transition-duration: 0.4s; /* Mozilla */
 					transition-duration: 0.4s;
 				}
 				
@@ -300,6 +200,7 @@
 					font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 					text-decoration:none;
 					-webkit-transition-duration: 0.4s; /* Safari */
+					-moz-transition-duration: 0.4s; /* Mozilla */
 					transition-duration: 0.4s;
 				}
 				#links a:hover{	
@@ -309,6 +210,7 @@
 					font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 					text-decoration:none;
 					-webkit-transition-duration: 0.4s; /* Safari */
+					-moz-transition-duration: 0.4s; /* Mozilla */
 					transition-duration: 0.4s;
 				}
 				#links a:active{
@@ -318,6 +220,7 @@
 					font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 					text-decoration:none;
 					-webkit-transition-duration:0.2s; /* Safari */
+					-moz-transition-duration: 0.4s; /* Mozilla */
 					transition-duration:0.2s;					
 				}
 			
@@ -369,6 +272,7 @@
 						text-shadow:none;
 						text-decoration:none;
 						-webkit-transition-duration:0.4s; /* Safari */
+						-moz-transition-duration: 0.4s; /* Mozilla */
 						transition-duration:0.4s;
 					}
 					.navhead-en a:hover{
@@ -377,6 +281,7 @@
 						text-shadow:0px -3px 5px #FFFFFF, 0px 3px 5px #FFFFFF,-3px 0px 5px #FFFFFF,3px 0px 5px #FFFFFF;
 						text-decoration:none;
 						-webkit-transition-duration: 0.4s; /* Safari */
+						-moz-transition-duration: 0.4s; /* Mozilla */
 						transition-duration:0.4s;
 					}
 					.navhead-en a:active{
@@ -385,6 +290,7 @@
 						text-shadow:0px -3px 5px #FFFFFF, 0px 3px 5px #FFFFFF,-3px 0px 5px #FFFFFF,3px 0px 5px #FFFFFF;
 						text-decoration:none;
 						-webkit-transition-duration:0.2s; /* Safari */
+						-moz-transition-duration: 0.2s; /* Mozilla */
 						transition-duration:0.2s;					
 					}
 		#navlang{
