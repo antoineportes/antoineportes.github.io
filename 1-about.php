@@ -1,0 +1,136 @@
+
+<?php
+include_once '0-common.php';
+?>
+<!DOCTYPE html>
+<html lang="<?php echo $lang; ?>">
+	<head>
+		<title><?php echo $lang['ABOUT-TITLE']; ?></title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="author" content="Antoine Portes"/>
+		<meta name="keywords" content="antoine portes, compositeur, musique, film, composition a l'image, documentaire, blues, rock, classique, ambience, soundtrack, bande originale, court-metrage, musique originale"/>
+		<meta name="description" content="Musique orchestrale, Musique de chambre, Blues, Rock, &amp;c. - Composition à l'image"/>
+		<meta property="og:site_name" content="Antoine Portes"/>
+		
+		<!--FAVICON-->
+		<link rel="apple-touch-icon" sizes="57x57" href="http://i.imgur.com/LRPoUiW.png"/>
+		<link rel="apple-touch-icon" sizes="60x60" href="http://i.imgur.com/J0NoiMs.png"/>
+		<link rel="apple-touch-icon" sizes="72x72" href="http://i.imgur.com/UrhN90j.png"/>
+		<link rel="apple-touch-icon" sizes="76x76" href="http://i.imgur.com/HZ5zQFY.png"/>
+		<link rel="apple-touch-icon" sizes="114x114" href="http://i.imgur.com/26HEeaO.png"/>
+		<link rel="apple-touch-icon" sizes="120x120" href="http://i.imgur.com/dKyG6OO.png"/>
+		<link rel="apple-touch-icon" sizes="144x144" href="http://i.imgur.com/PdyrlyL.png"/>
+		<link rel="apple-touch-icon" sizes="152x152" href="http://i.imgur.com/7fRbXhk.png"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="http://i.imgur.com/7EXFD9j.png"/>
+		<link rel="icon" type="image/png" sizes="192x192" href="http://i.imgur.com/pE4J1cr.png"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="http://i.imgur.com/ooJJ2yI.png"/>
+		<link rel="icon" type="image/png" sizes="96x96" href="http://i.imgur.com/HnPK8fT.png?1"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="http://i.imgur.com/7PhpY7F.png"/>
+		
+		<!--Style-->
+		<link rel="stylesheet" type="text/css" href="0-antoineportes.css"/>
+	
+		<!-- Google fonts-->
+		<link href='//fonts.googleapis.com/css?family=Milonga' rel='stylesheet'>
+	</head>
+
+	<body class="global" id="wp1">
+		<!--MENU-->
+		<table id="navbar">
+			<tr>
+				<th id="navhome"><!--
+					Home:
+					--><a href="../index.htm" target="_self" type="text/html" hreflang="en fr de" charset="UTF-8" rel="prev"><img alt="AP logo" title="Accueil" src="http://i.imgur.com/IQqKKmh.png" height="40px" width="40px" /></a></th>
+				<th class="navsectionself" style="border-radius:8px 0px 0px 8px;"><!--
+					About (self):
+					--><h1 title="(Vous êtes déjà sur cette page)" class="navhead-en">&#192; propos</h1></th>
+				<th class="navsectionlink"><!--
+					Sounds:
+					--><h1 class="navhead-en"><a title="Cliquez ici pour écouter quelques-unes de mes &#339;vres." href="sounds.htm" target="_self" type="text/html" hreflang="fr" charset="UTF-8" rel="next">Musique</a></h1></th>
+				<th class="navsectionlink"><!--
+					Contact:
+					--><h1 class="navhead-en"><a title="Cliquez ici si vous avez quelque chose à me dire." href="contact.htm" target="_self" type="text/html" hreflang="fr" charset="UTF-8" rel="next">Contact</a></h1></th>
+				<th class="navsectionlink"><!--
+					Links:
+					--><h1 class="navhead-en"><a title="Cliquez ici pour aller voir ailleurs." href="links.htm" target="_self" type="text/html" hreflang="fr" charset="UTF-8" rel="next">Liens</a></h1></th>
+				<th id="navlang"><!-- 
+					FR:
+					--><img alt="Lamartine" title="Version Française" src="http://i.imgur.com/p28vsXY.png?1" onmouseover="this.src='http://i.imgur.com/fejjzD6.png';" onmouseout="this.src='http://i.imgur.com/p28vsXY.png?1';" height="40px" width="40px" /><!--
+					EN:
+					--><a href="../en/index.htm" target="_self" type="text/html" hreflang="en" charset="UTF-8" rel="alternate"><img title="English version" alt="Byron" src="http://i.imgur.com/SQOmxC1.png" onmouseover="this.src='http://i.imgur.com/6WSLO24.png';" onmouseout="this.src='http://i.imgur.com/SQOmxC1.png';" height="40px" width="40px" /></a><!--
+					DE:
+					--><a href="../de/index.htm" target="_self" type="text/html" hreflang="de" charset="UTF-8" rel="alternate"><img alt="Schiller" title="Deutscher Fassung" src="http://i.imgur.com/G7D5gIA.png" onmouseover="this.src='http://i.imgur.com/5qnvCUa.png';" onmouseout="this.src='http://i.imgur.com/G7D5gIA.png';" height="40px" width="40px" /></a></th>
+			</tr>
+		</table>
+		
+		<!--What I do-->
+		<div id="global-1st" class="justify">
+			<h2 class="divtitle" title="Prestations">Prestations</h2>
+				<ul style="font-size:120%;" id="presta">
+					<li>Composition à l'image / White scoring <span style="font-size:70%;">(bandes originales de films)</span></li>
+					<li>Musique</li>
+					<li>Textes</li>
+					<li>Arrangements</li>
+					<li>Sound design</li>
+				</ul>
+			<p class="indentation justify">
+			Les &oelig;uvres musicales disponibles en streaming à la section <span style='font-family:arial;'>&#8223;</span>Musique<span style='font-family:arial;'>&rdquo;</span> (inédites ou non) sont parfaitement susceptibles d'être employées à des fins audiovisuelles, événementielles ou autres. Si l'une d'entre elles vous semble correspondre à votre projet, vous trouverez mes coordonnées dans la section <span style='font-family:arial;'>&#8223;</span>Contact<span style='font-family:arial;'>&rdquo;</span>&nbsp;: le nom du morceau me suffira à l'identifier, et n'hésitez pas à me demander de le modifier (raccourcir&nbsp;/ rallonger&nbsp;/ oter&nbsp;/ ajouter une partie, ré-orchestrer, accélérer&nbsp;/ ralentir, &amp;c...), ni à l'employer comme référence en vue d'optimiser l'intelligibilité du cahier des charges, en cas de commande d'une nouvelle musique.
+			</p>
+		</div>
+		<!--Who I am-->
+		<div class="global justify">
+		<h2 class="divtitle" title="Biographie">Biographie</h2>
+			<p>
+			<span id="bigletter">D'</span><span id="firstword">aucuns</span> sont astreints à l'impérieuse nécessité de respirer&nbsp;; pour ma part j'écris de la musique.
+			</p>
+			<p>
+			Mon sort fut irréversiblement scellé lorsqu'au cours de l'été 2003, j'aperçus à travers le fatal soupirail, dans l'obscure poussière d'un grenier sénescent, ce qui naguère avait été une guitare et désormais, dans un ultime soubresaut d'espérance, tendait vers moi ses las moignons, implorant Dieu et Diable pour une fin de vie moins misérable. Cette rencontre que la raison veut fortuite, nous la vécûmes comme la preuve d'une indéfectible prédilection&nbsp;; aussi nous adoptâmes-nous avec l'impatience, la ferveur et l'innocence des jeunes amants.
+			</p>
+			<p class="indentation">
+			C'est que j'avais, un peu plus tôt, été séduit par la désinvolte impudence des Sex Pistols et la nonchalence virtuose de Monsieur Hendrix&nbsp;&#x2014; ils furent les premiers de l'interminable liste de mes professeurs.
+			<br/>
+			Dès lors, de salles de répèt' en squatts délabrés, où poussière et bière se noient dans l'éther, j'acquis une collection d'instruments d'autant plus ample et variée que mes allégeances devenaient moins sectaires&nbsp;: le Punk mène au Garage, qui mène au Surf ou à l'Acid Rock, lequel mène au Krautrock, à la Protest Song ou au Blues, &amp; c&#230;tera, &amp; c&#230;tera, &amp; c&#230;tera...
+			</p>
+			<p class="indentation">
+			Il y eut un soir, il y eut un matin. Puis mes périgrinations vagabondes dans la misère et l'insouciance du célibat prirent fin pour céder place à la recherche du confort matériel&nbsp;: il fallut que je travaillasse. Je vendis donc mon corps au consumérisme effréné d'une race trop indolente pour souffrir les besoins de sa propre pérennité, et manquai mécaniquement du temps nécessaire à la pratique musicale.
+			<br/>
+			Mais, une fois de plus, le Sort intervint. Et la pugnacité de ma détermination voulut que je m'accrochasse à la passion que Stanley Kubrick m'avait transmise des années plus tôt&nbsp;: celle de <span title="Georg Friedrich Händel (1685 - 1759)">Händel</span>, de <span title="Henri Purcell (1659 - 1695)">Purcell</span>, de <span title="Franz P. Schubert (1797 - 1828)">Schubert</span> et surtout de <span title="Ludwig van Beethoven (1770 - 1827)"><b>Ludwig van</b></span>. Aussi abandonnai-je la tradition orale et m'adonnai, le long du réseau ferré transilien, à l'étude approfondie de partitions et de traités de Contrepoint, d'Harmonie et, plus récemment, d'Orchestration.
+			</p>
+			<p class="indentation">
+			De quoi repeupler le panthéon de mes professeurs par une immigration savamment choisie&nbsp;; si bien que l'humble Robert Johnson ou encore les décadents Velvet Underground y côtoient désormais des immortels d'un prestige tout autre&nbsp;: le premier fut <span title="Johann Joseph Fux (c. 1660 - 1741)">J.J. Fux</span>, immanquablement suivi de l'inestimable <span title="Johann Sebastian Bach (1685 - 1750)">J.S. Bach</span>, puis <span title="Georg Philipp Telemann (1681 - 1767)">Telemann</span>, puis <span title="Johann Christoph Pachelbel (1653 - 1706)">Pachelbel</span>, puis <span title="Arcangello Corelli (1653 - 1713)">Corelli</span>, <span title="G. Domenico Scarlatti (1685 - 1757)">Scarlatti</span>, <span title="Giuseppe Tartini (1692 - 1770)">Tartini</span>, <span title="André Raison (c. 1640 - 1719)">Raison</span>, <span title="Marin Marais (1656 - 1728)">Marais</span>, <span title ="François Couperin (1668 - 1733)">Couperin</span>, <span title="Jean-Philippe Rameau (1683 -1764)">Rameau</span>, <span title ="F. Joseph Haydn (1732 - 1809)">Haydn</span>, <span title="Wolfgang Amadé Mozart (1756 - 1791)">Mozart</span>, <span title="Muzio F.V.F.S. Clementi (1752 - 1832)">Clementi</span>, <span title="Antonín Rejcha (1770 - 1836)">Reicha</span>, <span title="John Field (1782 - 1837)">Field</span>, <span title="Niccolò Paganini (1782 - 1840)">Paganini</span>, <span title="Carl Maria F.E. von Weber (1786 - 1826)">Weber</span>, <span title="J.L. Felix Mendelssohn Bartholdy (1809 - 1847)">Mendelssohn</span>, <span title="Robert Schumann (1810 - 1856)">Schumann</span>, <span title="Frédéric Chopin (1810 - 1849)">Chopin</span>, <span title="L.-Hector Berlioz (1803 - 1869)">Berlioz</span>, <span title="Franz Liszt (1811 - 1886)">Liszt</span>, <span title="W. Richard Wagner (1813 - 1883)">Wagner</span>, <span title="Johannes Brahms (1833 - 1897)"><b>Brahms</b></span>, <span title="Bedřich Smetana (1824 - 1884)">Smetana</span>, <span title="Antonín L. Dvořák (1841 - 1904)">Dvořák</span>, <span title="Милий А. Балакирев (1837 -1910)">Balakirev</span>, <span title="Модест П. Мусоргский (1839 - 1881)"> Moussorgski</span>, <span title="Camille Saint-Saëns (1835 - 1921)">Saint-Saëns</span>, <span title="Gabriel Fauré (1845 - 1924)">Fauré</span>, <span title="Charles Koechlin (1867 - 1950)">Koechlin</span>, <span title="Claude A. Debussy (1862 -1918)">Debussy</span>, <span title="Александр Н. Скрябин (1872 - 1915)">Scriabine</span>, <span title="Richard G. Strauss (1864 - 1949)">Strauss</span>, <span title="Hugo P.J. Wolf (1860 - 1903)">Wolf</span>, <span title="Gustav Mahler (1860 - 1911)">Mahler</span>, <span title="Alexander von Zemlinsky (1871 - 1942)">Zemlinsky</span>, <span title="Arnold Schönberg (1874 - 1951)"><b>Schönberg</b></span>, <span title="Alban M.J. Berg (1885 - 1935)"><b>Berg</b></span>, <span title="Anton F.W. von Webern (1883 - 1945)"><b>Webern</b></span>, <span title="Игорь Ф. Стравинский (1882 - 1971)">Stravinsky</span>, <span title="Karol M. Szymanowski (1882 - 1937)">Szymanowski</span>, <span title="Bartók Béla (1881 - 1945)"><b>Bartók</b></span>, <span title="E. Benjamin Britten (1913 - 1976)">Britten</span>, <span title="Сергей С. Прокофьев (1891 - 1953)">Prokofiev</span>, <span title="Ernst Křenek (1900 - 1991)">Křenek</span>, <span title="Ervín Schulhoff (1984 - 1942)">Schulhoff</span>, <span title="Olivier Messiaen (1908 - 1992)"><b>Messiaen</b></span>, <span title="Иван А. Вышнеградский (1893 - 1979)">Wyschnegradsky</span>, <span title="Witold R. Lutosławski (1913 - 1994)">Lutosławski</span>, <span title="Ligeti György (1923 - 2006)">Ligeti</span>, <span title="Milton B. Babbitt (1916 - 2011)">Babbit</span>, <span title="Hans Werner Henze (1926 - 2012)">Henze</span>, <span title="Pierre Boulez (1925 - 2016)">Boulez</span>, <span title="Benjamin &ldquo;Ben&rdquo; B. Johnston Jr. (b. 1926)">Johnston</span>, <span title="Krzysztof E. Penderecki (b. 1933)">Penderecki</span>, <span title="Kalevi E. Aho (b. 1949)">Aho</span>...
+			</p>
+			<p>
+			(Mes plus plates excuses à toi dont le nom est <i>Légion</i> et que, fatalement, j'ai oublié.)
+			<p class="indentation">
+			Cette illustre tutelle, à défaut de m'autoriser la moindre comparaison, est néanmoins devenue le moteur d'une inlassable auto-insatisfaction et du perpétuel perfectionnement qu'elle induit. Pour autant, je ne renie ni ne dénigre toute la musique populaire qui m'a la première séduit&nbsp;&#x2014; que cela soit ma seule concession à cette hantise que je cultive à l'endroit de l'étiquetage des Arts&nbsp;: j'avoue me reconnaître dans l'éclectisme post-moderne.
+			</p>
+			<p>
+			Malheureuse digression&nbsp;: j'avais presque fini !
+			</p>
+			<p class="indentation">
+			Avec la technique vint peu à peu l'assurance, et cette dernière enfanta l'espoir&nbsp;; celui d'une perspective réaliste de reconversion professionnelle comme salvatrice catharsis pour un artiste dont la prolixité frustrée lui inspirait des poëmes qui commençaient à faire passer Messieurs <span title ='Gérard de Nerval (1808 - 1855)'>de Nerval</span>, <span title='Antonin Artaud (1896 - 1948'>Artaud</span> ou encore Jean de Patmos pour des auteurs allègres, joviaux et parfaitement sains d'esprit. La solution émana de la providentielle réminiscence d'idoles juvéniles (voire infantiles) telles que Maurice Jarre, Ennio Morricone, Wendy Carlos, John Williams et autres Bernard Herrmann&nbsp;; au stade suprême de la société du spectacle, en effet, la musique est un métier pourvu que sa fin soit d'adjuver une manifestation de la mise en scène globale, une image en mouvement par exemple.
+			<p class="indentation">
+			Fort de cette révélation, je quittai aussitôt mon tiroir-caisse et me donnai la peine de naître&nbsp;: j'appris les man&oelig;uvres de la composition à l'image en me faisant la main sur le cinéma muet d'<span title='Сергей М. Эйзенштейн (1898 - 1948)'>Einsenstein</span>, et proposai les fruits de mon labeur à Papa dans l'espoir qu'il leur trouvât une place dans les documentaires qu'il réalise.
+			<br/>
+			Ce qui finit par arriver et permit d'ajouter le chapître <i>Expériences</i> à mon CV, pour qu'aujourd'hui, enfin, je jouisse du minimum de légitimité qu'exige la publication de ce site internet.
+			</p>
+			<p>
+			Trève de rébarbatifs verbiages, allons écrire la suite !
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 368.9 225.7" style="enable-background:new 0 0 368.9 225.7;float:right;" xml:space="preserve" height="100" width="163">
+					<g>
+						<path d="M253,117.9c38.1-8.6,76.7-13.5,115.8-13.5c0,0.5,0.1,1,0.1,1.5c-5.7,0-11.4-0.1-17.1,0c-4.2,0.1-8.5,0.3-12.7,0.7 c-6.1,0.6-12.1,1.3-18.2,2.1c-7.7,1-15.4,1.8-23,3.1c-13.3,2.4-26.7,4.7-39.8,7.8c-9,2.1-17.8,4.9-25.9,9.7 c-7,4.1-14.2,7.9-21.4,11.7c-11.6,6.1-23.2,12.3-35,18.2c-5.8,2.9-12,5-17.9,7.6c-4.6,2.1-9.1,4.7-13.7,6.9 c-9.3,4.4-18.6,8.8-28,13.1c-7.4,3.4-14.8,7-22.4,10.1C81,202,68,206.9,55,211.8c-4,1.5-8,3.3-12.1,4.4c-9.6,2.7-19.2,5.2-28.9,7.7 c-3.7,0.9-7.5,1.5-11.3,2.1c-0.7,0.1-1.6-0.2-2.7-0.4c1.7-4.4,5.2-6.5,8.4-8.9c12.2-9,25.8-15.8,39.5-22.2c10-4.7,20-9.6,30.1-14.3 c10.4-4.9,20.9-9.7,31.4-14.3c8.9-3.8,18.1-7.2,27.1-10.8c5.4-2.2,10.6-4.6,16-6.8c2.3-0.9,4.7-1.3,7-2.1 c8.5-3.1,16.9-6.8,25.6-9.4c18-5.4,36.3-9.9,54.3-15.5c5.3-1.6,10.3-4.9,14.8-8.4c8.1-6.4,15.9-13.2,23.2-20.4 c3.2-3.2,5.4-7.7,6.9-12c0.8-2.2-0.3-5.8-1.8-7.8c-4-5.4-8.6-10.4-13.3-15.4c-1.5-1.6-3.2-2.1-5.8-0.2c-6.8,4.9-14.1,9.1-21.3,13.5 c-1.8,1.1-3.7,2-5.3,3.4c-2.1,1.7-5.1,2.6-5.1,6.2c-0.1,5.7-0.4,11.5,4.7,15.6c0.6,0.5,1.9,0.5,2.8,0.2c5.1-1.8,9-5.5,12.2-9.6 c3.2-4.1,5.5-8.9,8.2-13.4c0,1.1,0.4,2.9-0.1,4.5c-1.7,6-4.8,11.1-9.8,14.8c-3.4,2.6-6.9,5.1-10.7,7.1c-3.3,1.8-5.5-0.4-7.4-3.2 c-3.4-4.8-3.7-10.3-3.4-16.1c-4.6,0.9-6.7,7.1-11.8,5.9c-0.2-0.4-0.4-0.8-0.7-1.2c2.4-1.8,4.7-3.7,7.1-5.4c1.8-1.3,4.1-2.1,5.4-3.8 c1.2-1.7,1.5-4.2,2.1-6.4c1.7-7.1,4-13.9,8.6-19.7c0.9-1.1,2.5-1.9,4-2.3c0.5-0.1,2,1.4,2.1,2.2c0.1,0.8-0.9,1.9-1.7,2.5 c-0.8,0.6-2.3,0.4-2.8,1.1c-4.2,5.5-5.8,12-7.7,18.4c0.3,0.2,0.5,0.4,0.8,0.6c10.8-6.2,21.5-12.4,31.6-18.2 c-2.1-5.3-4.8-10.6-6.3-16.2c-0.7-2.5,0.9-5.8,1.7-8.6c0.1-0.4,2-0.7,2.4-0.4c2,2.2,3.9,4.5,5.8,6.8c-0.2,0.3-0.5,0.6-0.7,0.9 c-0.9-0.4-1.8-0.8-2.6-1.2c-0.8-0.3-1.8-1.1-2.3-0.9c-0.6,0.3-1.2,1.6-1.1,2.3c0.9,4.5,1.5,9.1,4.9,12.8 c5.9,6.5,11.6,13.2,17.1,19.9c5.2,6.3,4.8,13,0.1,19.6C275.6,100.8,264.2,109,253,117.9z M6.1,222.1c0.2,0.3,0.3,0.7,0.5,1 c4.5-0.8,9.1-1.3,13.4-2.5c9.8-2.7,19.6-5.7,29.3-8.9c9.8-3.2,19.6-6.6,29.2-10.4c8.1-3.2,16.1-6.9,24.1-10.5 c9-4.1,18-8.2,26.9-12.4c8.2-3.9,16.3-7.8,24.4-11.9c12.2-6.1,24.4-12.2,36.6-18.3c10.9-5.5,21.8-11.1,32.6-16.8 c2.2-1.1,4.3-2.5,7.2-4.2c-1.7,0-2.3-0.1-2.8,0c-19.6,6.3-39.3,12.1-58.6,19.1c-20.7,7.5-41.2,16-61.5,24.6 c-14.4,6-28.5,12.7-42.5,19.4C50.9,197,37,203.7,23.4,210.8C17.3,214,11.8,218.3,6.1,222.1z" fill="white"/>
+						<path d="M53.6,92.1c2.2-0.3,4.7-0.5,7.4-0.9c0.4-3,0.9-6.1,1.1-9.2c0.4-5.7,0.6-11.4,0.7-17c0.3-9.7,0.3-19.5,0.8-29.2 C64,28.9,65,22,65.8,15.1c0.1-0.6,0.7-1.1,1.1-1.8c3.9,2,2.3,5.8,3,8.6c1.4,5.8,2.1,11.7,3,17.6c1,6.5,1.9,13,2.9,19.5 c1.2,8.3,2.4,16.7,3.4,25.1c0.5,3.5,0.5,7.1,0.9,10.7c0.6,4.5,1.5,8.9,2.1,13.3c0.4,3.3,0.6,6.6,0.9,10.2c4.7-2.1,9.9-3,14.1-6.1 c0-5.4-0.1-11.5,0.1-17.6c0-1.3,1.1-2.5,1.5-3.9c0.4-1.6,1.1-3.3,0.9-4.9c-1.4-9.7-3.1-19.4-4.6-29.1c-0.7-4.8-1.1-9.6-1.4-14.4 c-0.6-8.1,3-14.7,8.4-20.4c4.4-4.6,12.9-4.3,18-0.4c7.1,5.4,11.1,12.6,13.7,20.7c1.9,5.8,1.5,11.8,0.4,17.7 c-0.1,0.7,0.3,1.8,0.9,2.4c8.6,8.9,14.8,19.4,15.5,31.7c0.5,8.6-3,16.8-10.2,22.6c-4.6,3.7-11.6,2.3-15.3-2.4 c-2.6-3.3-5.4-6.3-4.9-10.8c0.9-7.4,0.7-15.3,6.5-21c3.9-3.8,8.7-6.6,13.4-10c-1.5-2.3-2.6-6.2-7.4-7.8c-1.2,3.9-2.4,7.6-3.5,11.2 c-1.4,1.1-3.2,2.2-4.7,3.8c-5.2,5.6-11.3,9.8-19,12.8c2.5,10.3,5,20.5,7.3,30.8c0.4,1.6-0.3,3.5-0.4,5.3c-0.5,0.1-0.9,0.2-1.4,0.3 c-0.8-1.7-1.8-3.3-2.2-5c-2.3-9.6-4.4-19.3-6.6-29c-0.2-0.9-0.7-1.6-1.1-2.5c-2.4,4.7-0.1,25.2,3.1,34.6c-0.9-0.6-2.3-1.1-2.6-2 c-1.4-3.5-2.4-7.2-3.5-10.8c-3,2.8-2.6,6.2-0.6,9.7c-2.8,0.3-2.8,0.3-4.5-4.6c-4.5,2.2-9,4.4-13.5,6.6c-2.8,1.3-5.5,2.2-8.7,0.6 c-3.8-2-7.8-3.5-12.1-5.4c-0.8,2.7-1.4,5.6-2.4,8.4c-1.3,3.7-2.7,7.4-4.4,10.9c-0.4,0.9-2,1.3-3,1.9c-0.4-1.2-1.1-2.3-1-3.5 c0.1-6.9,0-13.9,0.8-20.7c0.4-4-1.5-6.3-3.2-9.3c-4.3-7.7-3.8-8.7,2.5-14.1c0.8-0.7,1.8-1.6,1.9-2.5c0.4-4.5,0.4-9,0.8-13.4 c0.9-9.8,1.9-19.7,2.8-29.5c0.3-3.2,0.5-6.3,0.8-9.5C55.2,29,56.2,18.5,57.1,8c0.2-2.2,0.4-4.5,0.8-6.7c0.1-0.5,0.9-0.9,1.4-1.3 c0.4,0.6,1.3,1.3,1.2,1.8c-0.3,3-0.9,6-1.4,9c-0.5,3.6-1.1,7.2-1.4,10.8c-0.6,8.2-0.8,16.5-1.5,24.7c-0.7,8.4-2.1,16.8-2.7,25.2 C53.2,78.2,53.6,85,53.6,92.1z M131.6,51.1c1.4-7.6-2.3-13.9-6.2-19.6c-2.4-3.5-5.9-7-9.7-8.5c-10-3.9-16.6,4-18.2,12 c-1.1,5.7-0.2,11.7-0.2,17.5c-0.1,11,3.1,21.5,5.7,32c1,3.8,3.4,4.7,6.9,2.7c5.5-3.2,10.7-6.7,14.2-12.2c0.9-1.5,1.7-3.4,1.7-5.1 c-0.1-3.7,1.2-6.6,3.8-9.2c1.1-1.1,1.7-2.9,2-4.4C131.8,54.8,131.6,52.9,131.6,51.1z M147.5,93.1c-0.6-2.9-1.2-7.5-2.5-11.8 c-1.7-5.5-3.8-5.8-8.9-2.6c-5.1,3.2-9.4,6.9-11,12.9c-0.5,1.8-0.9,3.6-1.3,5.4c-1.5,6.9,0.8,13.4,6,16.8c3.8,2.5,6.7,2.1,9.9-0.9 C145.2,108.1,147.2,101.8,147.5,93.1z M67.9,25.7c-0.4,0-0.7,0-1.1,0c-1.1,21.8-2.2,43.7-3.3,65.4c4.4,0.9,8.9,1.9,14.1,2.9 C74.3,71.2,71.1,48.5,67.9,25.7z M59.6,118.5c3.8,1.8,7.7,4,11.8,5.5c5.1,1.9,8.9-0.9,8.5-6.3c-0.4-6.1-1.6-12.1-1.9-18.2 c-0.2-2.7-1.8-3.2-3.5-3.5c-2.8-0.5-5.6-0.5-8.4-0.9c-3.2-0.5-3.8,1.2-4.1,3.9C61.4,105.2,60.5,111.4,59.6,118.5z M60.6,96.9 c-0.2-0.7-0.2-1.8-0.7-2.2c-2-1.5-7.5,1.6-7.7,4c-0.2,2.6-0.3,5.2-0.7,7.7c-0.6,3.6,0.7,6.3,3.3,8.5c1.2,1,2.8,1.7,3.2-1 C58.7,108.3,59.6,102.7,60.6,96.9z M51.1,116c0,6.4,0,12.3,0,18.3c2-3.4,3.2-7,4.3-10.6C56.9,118.6,56.8,118.5,51.1,116z M49.3,107.9c0-3.6,0-6.7,0-9.8C44.6,101.5,44.5,104,49.3,107.9z" fill="white"/>
+						<path d="M180.4,113.8c-4.4-9-5.8-20.3-18.4-24.2c0.4,3.9,0.7,7.2,1.1,10.4c0.4,4,1,7.9,1.3,11.9c0.1,0.8-1.1,1.7-1.7,2.6 c-0.6-0.7-1.5-1.3-1.8-2.2c-3.4-12-5.8-24.1-6.6-36.5c-0.3-5.3-1.4-10.5,0.8-15.6c0.1-0.3,0-0.9,0.2-1c4.3-2.4,2.7-7.1,4.1-10.6 c1.5-3.8,2.8-7.6,6.7-9.8c2.1-1.2,3.7-0.7,5.4,0.8c3.4,3,4.9,7,5,11.2c0.6,12.5-3.1,23.9-10.1,34.3c-0.4,0.6-0.1,2.7,0.3,2.8 c4.8,1.2,7.6,4.8,9.5,8.8c2.3,4.8,3.9,9.9,5.7,14.9c0.2,0.6-0.2,1.5-0.3,2.2C181.2,113.7,180.8,113.8,180.4,113.8z M161.4,84.8 c0.3,0.1,0.7,0.2,1,0.3c0.7-0.6,1.6-1.1,1.9-1.9c2.7-6.1,6-12.1,7.8-18.5c1.6-5.7,2.4-12,0.1-17.9c-0.8-2-2.6-3.6-3.9-5.4 c-1.6,1.3-3.3,2.4-4.7,3.8c-3.9,4.1-3.2,9.5-3.4,14.4C160.1,68.1,161,76.5,161.4,84.8z M157.9,82.2c0.3,0,0.7,0,1-0.1 c-0.3-6.1-0.7-12.2-1-18.2c-0.4,0-0.7,0-1.1,0.1C155.8,70.1,158.1,76.1,157.9,82.2z" fill="white"/>
+						<path d="M215.2,105.3c-3.6-1.2-4.9-4.2-5.4-6.8c-1.8-9.4-3.1-18.9-4.4-28.4c-0.7-4.7-1.1-9.5-1.8-15.1c-5.4,3.4-11,5.5-14,11.3 c-0.4,0.8-1.2,1.5-1.8,2.3c-0.4-0.4-1-0.7-1.1-1.1c-0.2-1.1-0.6-2.5-0.1-3.2c4.2-6.6,10.6-10.3,17.8-12.8 c5.2-1.8,10.5-2.9,15.7-4.4c0.5-0.1,1.2-0.4,1.4-0.9c4-7.4,11.2-9.5,18.6-11.2c3.6-0.8,7.2-1.6,10.8-2.1c1.4-0.2,3,0.7,4.5,1.7 c-11,1.2-21.3,3.6-30,11.2c2.5,0.8,4.6,1.5,7.3,2.4c-9.3,1.8-17.5,3.3-26.2,4.9C209.1,70.8,208.9,88.2,215.2,105.3z" fill="white"/>
+					</g>
+					A. Portes
+				</svg>
+			</p>
+		</div>
+		<!--FOOTER-->
+		<div id="footer">
+			&copy; 2017 by Antoine Portes. All Rights Reserved.
+		</div>
+	</body>
+</html>
