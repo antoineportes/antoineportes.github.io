@@ -1,0 +1,55 @@
+html{
+	height:100%;
+}
+
+body{	
+	background-color: #000000;
+	height: 100%;
+	padding: 0 0 0 0; 
+	margin: 0 0 0 0;
+	top: 0;
+}
+
+	/*MENU*/
+	.dropdown{
+		height: 120px;
+		width: 90px;
+		background-image: url('https://raw.githubusercontent.com/antoineportes/files/master/_png/mobile/mobile-dropdown.png');
+		background-size: 100% 100%;
+		padding: 0 0 0 0; 
+		margin: 0 0 0 0;
+	}
+		.dropdown a{
+			display: block;
+			clear: both;
+			padding: 0 0 0 0; 
+			margin: 0 0 0 0;
+			height: 25%;
+			width: 100%;
+			text-align: center;
+		}
+		
+#footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 10%;
+	background-image: linear-gradient(to left, rgba(128, 128, 128, 1), rgba(0, 0, 0, 1) 66%);
+}
+	#footer table{
+		position: absolute;
+		right: 0px;
+		width: 50%;
+	}
+	
+	
+	.global h2{
+		color: white;
+	}
+	.global p{
+		color: white;
+	}
+	.clear{
+		height: 10%;
+		clear: both;
+	}
