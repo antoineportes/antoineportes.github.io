@@ -230,9 +230,10 @@ h3#tune{
 		height:144px;
 		background-size:cover;
 		position:relative;
+		margin:auto;
 	}
-	.youtube-button#001{
-				background-image:url('https://raw.githubusercontent.com/antoineportes/files/master/_png/youtube/romantischesstueck');
+	#ytb001{
+				background-image:url('https://raw.githubusercontent.com/antoineportes/files/master/_png/youtube/romantischesstueck.png');
 	}
 	.play{
 		enable-background:new 0 0 503 501;
@@ -265,6 +266,26 @@ h3#tune{
 		-webkit-transition-duration:0.3s;
 		transition-duration:0.3s;
 	}
+.score a:link, .score a:visited{
+	color:#AD0000;
+	cursor:pointer;
+	text-shadow:0px -3px 5px #000000, 0px 3px 5px #000000,-3px 0px 5px #000000,3px 0px 5px #000000;
+	font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	text-decoration:none;
+}
+.score a:hover{	
+	color:#000000;
+	cursor:pointer;
+	text-shadow:0px -3px 5px #AD0000, 0px 3px 5px #AD0000,-3px 0px 5px #AD0000,3px 0px 5px #AD0000;
+	font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	text-decoration:none;
+}
+.score a:active{
+	color:#AD0000;
+	cursor:pointer;
+	text-shadow:0px -3px 5px #AD0000, 0px 3px 5px #AD0000,-3px 0px 5px #AD0000,3px 0px 5px #AD0000;
+	font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	text-decoration:none;	
 
 /* !-- Contact -- */
 #phone{
