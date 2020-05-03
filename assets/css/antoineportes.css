@@ -499,11 +499,11 @@ div.social{
     padding: 0 0 0 0;
     position: fixed;
     bottom: 0;
-    right: 18px;
+    left: 50vw;
     z-index: 1000;
     width: auto;
-    text-align: right;
     background-color: rgba(0,0,0,0.8);
+    transform: translateX(-50%);
 }
 div.social a{
     margin: 0 6px 6px 0;
