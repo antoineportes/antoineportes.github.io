@@ -8,6 +8,7 @@ body, html{
     overflow-y: auto;
     scroll-snap-type: y proximity;
     scroll-behavior: smooth;
+    scrollbar-color: rgb(175, 159, 131) rgb(33, 33, 33);
 }
 .snapPoint{
     scroll-snap-align: start start;
@@ -341,6 +342,20 @@ div.filmItem img{
     height: auto;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+}
+div.filmItem img:hover{
+    filter: none;
+    -moz-filter: none;
+    -webkit-filter: none;
+    transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
 }
 table.filmDescription {
     max-width: 100%;
@@ -518,7 +533,7 @@ div.social a img{
     border: none;
     padding: 0 0 0 0;
     max-height: 18px;
-    height: 25vw;
+    height: 20vw;
     filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
