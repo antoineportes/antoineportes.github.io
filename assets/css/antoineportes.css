@@ -527,6 +527,7 @@ div.social a{
     display: inline;
     color: transparent;
     text-decoration: none;
+    cursor: pointer;
 }
 div.social a img{
     margin: 0 0 0 0;
@@ -548,6 +549,71 @@ div.social img:hover{
     transition-duration: 0.15s;
     -moz-transition-duration: 0.15s;
     -webkit-transition-duration: 0.15s;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100000; /* Sit on top */
+    padding-top: 15vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+/* Modal Content */
+.modal-content{
+    background-color: #000000;
+    color: lightgrey;
+    margin: auto;
+    padding: 20px;
+    border: .5rem solid rgb(4, 4, 4);
+    width: 80%;
+    overflow: auto;
+}
+.modal-content p{
+    margin: 0 0 0 0;
+    padding: 0 6px 0px 6px;
+    text-align: justify;
+    text-justify: inter-character;
+    font-size: 0.85rem;
+    text-indent: 1rem;
+}
+.modal-content ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: .375rem;
+    margin-block-end: .5rem;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
+    padding-inline-start: 40px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+.modal-content a{
+    text-decoration: none;
+    font-weight: normal;
+}
+.modal-content a:link, .modal-content a:visited{
+    color: rgb(175, 159, 131);
+}
+.modal-content a:hover, .modal-content a:active{
+    color: wheat;
+}
+/* The Close Button */
+.modal-close{
+    color: dimgrey;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-close:hover, .close:focus{
+    color: lightgrey;
+    text-decoration: none;
+    cursor: pointer;
 }
 /*Misc*/
 p.last{
