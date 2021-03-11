@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-var music = document.getElementById('varvaroi'); // id for audio element
+var music = document.getElementById('in_stahlgewittern'); // id for audio element
 var duration; // Duration of audio clip
-var pButton = document.getElementById('varvaroi-pButton'); // play button
-var playhead = document.getElementById('varvaroi-playhead'); // playhead
-var timeline = document.getElementById('varvaroi-timeline'); // timeline
+var pButton = document.getElementById('in_stahlgewittern-pButton'); // play button
+var playhead = document.getElementById('in_stahlgewittern-playhead'); // playhead
+var timeline = document.getElementById('in_stahlgewittern-timeline'); // timeline
 
 // timeline width adjusted for playhead
 var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;

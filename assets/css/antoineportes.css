@@ -265,6 +265,7 @@ div.genreContent{
     margin: 0 0 0 0;
     padding: 0 0 0 6px;
 }
+/*
 iframe{
     width: 100%;
     max-width: 250px;
@@ -276,6 +277,7 @@ iframe{
     border-width: 1px;
     border-radius: 10px 10px 10px 10px;
 }
+*/
 
 /*About*/
 h4.aboutTitle{

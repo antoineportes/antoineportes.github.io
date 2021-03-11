@@ -26,6 +26,7 @@
     <link rel='icon' type='image/png' sizes='192x192' href='assets\png\favicon/android192.png' />
     <!--Style-->
     <link rel='stylesheet' type='text/css' href='assets\css\antoineportes.css' />
+    <link rel='stylesheet' type='text/css' href='assets\css\musicplayers.css' />
 </head>
 <body>
     <!--Menu-->
@@ -73,89 +74,249 @@
                 <h4 class="genreTitle">Blues | Rock | Jazz</h4>
                 <div class="genreContent">
                     <!--god in three Pills-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/941469637&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="god_in_three_pills" preload="true">
+                        <source src="https://github.com/antoineportes/blues_rock_jazz/raw/main/Antoine%20Portes%20-%20god%20in%20three%20Pills.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="god_in_three_pills-pButton"></div>
+                            <div class="timeline" id="god_in_three_pills-timeline">
+                                <div class="playhead" id="god_in_three_pills-playhead"></div>
+                                <span class='worktitle'>god in three Pills</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/blues_rock_jazz/god_in_three_pills.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2020
                     </p>
+
                     <!--Dusty Spaceship-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/307567957&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="dusty_spaceship" preload="true">
+                        <source src="https://github.com/antoineportes/blues_rock_jazz/raw/main/Antoine%20Portes%20-%20Dusty%20Spaceship.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="dusty_spaceship-pButton"></div>
+                            <div class="timeline" id="dusty_spaceship-timeline">
+                                <div class="playhead" id="dusty_spaceship-playhead"></div>
+                                <span class='worktitle'>Dusty Spaceship</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/blues_rock_jazz/dusty_spaceship.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2017
                     </p>
+
                     <!--Almost free at last (Part 2)-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/341451967&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="almost_free_at_last_part_2" preload="true">
+                        <source src="https://github.com/antoineportes/blues_rock_jazz/raw/main/Antoine%20Portes%20-%20Almost%20free%20at%20last%20(Part%202)%20%5Bremix%202021%5D.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="almost_free_at_last_part_2-pButton"></div>
+                            <div class="timeline" id="almost_free_at_last_part_2-timeline">
+                                <div class="playhead" id="almost_free_at_last_part_2-playhead"></div>
+                                <span class='worktitle'>Almost free at last (Part 2)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/blues_rock_jazz/almost_free_at_last_part_2.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2017 | éditeur&nbsp;: Virtuel Audio | <b>composé à l'image</b> pour la trilogie <i>Le
                             jour où le sud a gagné sa liberté</i>
                             <br />
                             Vidéo&nbsp;: <a href="https://youtu.be/5Vbb4FXlRiQ" title="Le jour où le sud a gagné sa liberté: l'Afrique française (Teaser) - YouTube" target="_blank" type="text/html">YouTube</a>
                     </p>
-                    <!--Extérieurs 1—3-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/523645593&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/523645569&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/523645545&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+
+                    <!--Extérieurs-->
+                    <!--1-->
+                    <audio id="exterieur1" preload="true">
+                        <source src="https://github.com/antoineportes/blues_rock_jazz/raw/main/Antoine%20Portes%20-%20Ext%C3%A9rieur%201.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="exterieur1-pButton"></div>
+                            <div class="timeline" id="exterieur1-timeline">
+                                <div class="playhead" id="exterieur1-playhead"></div>
+                                <span class='worktitle'>Extérieur 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/blues_rock_jazz/exterieur_1.js" type="text/javascript"></script>
+                    <!--2-->
+                    <audio id="exterieur2" preload="true">
+                        <source src="https://github.com/antoineportes/blues_rock_jazz/raw/main/Antoine%20Portes%20-%20Ext%C3%A9rieur%202.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="exterieur2-pButton"></div>
+                            <div class="timeline" id="exterieur2-timeline">
+                                <div class="playhead" id="exterieur2-playhead"></div>
+                                <span class='worktitle'>Extérieur 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/blues_rock_jazz/exterieur_2.js" type="text/javascript"></script>
+                    <!--3-->
+                    <audio id="exterieur3" preload="true">
+                        <source src="https://github.com/antoineportes/blues_rock_jazz/raw/main/Antoine%20Portes%20-%20Ext%C3%A9rieur%203.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="exterieur3-pButton"></div>
+                            <div class="timeline" id="exterieur3-timeline">
+                                <div class="playhead" id="exterieur3-playhead"></div>
+                                <span class='worktitle'>Extérieur 3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/blues_rock_jazz/exterieur_3.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2018 | éditeur&nbsp;: Virtuel Audio | <b>improvisés à l'image</b> pour le film <i>Je dis
                             donc je suis</i>
                     </p>
+
                     <!--Blue Stripes-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/299802314&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="blue_stripes" preload="true">
+                        <source src="https://github.com/antoineportes/blues_rock_jazz/raw/main/Antoine%20Portes%20-%20Blue%20Stripes.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="blue_stripes-pButton"></div>
+                            <div class="timeline" id="blue_stripes-timeline">
+                                <div class="playhead" id="blue_stripes-playhead"></div>
+                                <span class='worktitle'>Blue Stripes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/blues_rock_jazz/blue_stripes.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2016 | éditeur&nbsp;: Virtuel Audio | extrait du film <i>Clinton-Obama, Les secrets d'une rivalité</i>
                     </p>
                 </div>
             </div>
+
+
             <!--World | Folk-->
             <div class="genre">
                 <h4 class="genreTitle">World | Folk</h4>
                 <div class="genreContent">
                     <!--Uisge-Beatha Agus Lionn-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/719158705&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="whiskey_n_beer" preload="true">
+                        <source src="https://github.com/antoineportes/world_folk/raw/main/Antoine%20Portes%20-%20Uisge-beatha%20agus%20Lionn.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="whiskey_n_beer-pButton"></div>
+                            <div class="timeline" id="whiskey_n_beer-timeline">
+                                <div class="playhead" id="whiskey_n_beer-playhead"></div>
+                                <span class='worktitle'>Uisge-beatha agus Lionn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/world_folk/whiskey_n_beer.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2019 | éditeur&nbsp;: Virtuel Audio | extrait du film <i>Bazin ou l'art d'aimer</i>
                     </p>
+
                     <!--Varvaroï-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/719922856&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="varvaroi" preload="true">
+                        <source src="https://github.com/antoineportes/world_folk/raw/main/Antoine%20Portes%20-%20Varvaro%C3%AF.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="varvaroi-pButton"></div>
+                            <div class="timeline" id="varvaroi-timeline">
+                                <div class="playhead" id="varvaroi-playhead"></div>
+                                <span class='worktitle'>Varvaroï</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/world_folk/varvaroi.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2019 | éditeur&nbsp;: Virtuel Audio
                     </p>
+
                     <!--Joyful Misery-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/368450987&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="joyful_misery" preload="true">
+                        <source src="https://github.com/antoineportes/world_folk/raw/main/Antoine%20Portes%20-%20Joyful%20Misery.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="joyful_misery-pButton"></div>
+                            <div class="timeline" id="joyful_misery-timeline">
+                                <div class="playhead" id="joyful_misery-playhead"></div>
+                                <span class='worktitle'>Joyful Misery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/world_folk/joyful_misery.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2017 | éditeur&nbsp;: Virtuel Audio
                     </p>
                 </div>
             </div>
+
+
             <!--Solo | Chamber-->
             <div class="genre">
                 <h4 class="genreTitle">Instrument seul | Musique de chambre</h4>
                 <div class="genreContent">
                     <!--Sehnsucht-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520774953&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
-                        <iframe scrolling="no" frameborder="no" allow="autoplay"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/933046882&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <!--piano-->
+                    <audio id="sehnsucht" preload="true">
+                        <source src="https://github.com/antoineportes/solo_chamber/raw/main/Antoine%20Portes%20-%20Sehnsucht.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="sehnsucht-pButton"></div>
+                            <div class="timeline" id="sehnsucht-timeline">
+                                <div class="playhead" id="sehnsucht-playhead"></div>
+                                <span class='worktitle'>Sehnsucht</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/solo_chamber/sehnsucht.js" type="text/javascript"></script>
+                    <!--strings-->
+                    <audio id="sehnsucht_for_strings" preload="true">
+                        <source src="https://github.com/antoineportes/solo_chamber/raw/main/Antoine%20Pores%20-%20Sehnsucht%20for%20strings%20%5Bremix%202021%5D.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="sehnsucht_for_strings-pButton"></div>
+                            <div class="timeline" id="sehnsucht_for_strings-timeline">
+                                <div class="playhead" id="sehnsucht_for_strings-playhead"></div>
+                                <span class='worktitle'>Sehnsucht for strings</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/solo_chamber/sehnsucht_for_strings.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2018 (original) – 2020 (pour cordes) | éditeur&nbsp;: Virtuel Audio
-                        <br />
+                        <br /><!--
+                        score-piano-->
                         Partition (piano)&nbsp;:<!--
                             IMSLP-->
                             <a href="https://imslp.org/wiki/Sehnsucht_(Portes%2C_Antoine)" title="Sehnsucht (Portes, Antoine) - IMSLP" target="_blank" type="text/html" rel="external">IMSLP</a><!--
                             Musescore-->
                             | <a href="https://musescore.com/antoineportes/sehnsucht_piano" title="Antoine Portes - Sehnsucht (2018, rev. 2020) Sheet music for Piano (Piano Duo) | Musescore.com" target="_blank" type="text/html" rel="external">Musescore</a>
                         <br /><!--
-                        strings-->
-                        Score (strings):<!--
+                        score-strings-->
+                        Partition (cordes):<!--
                             IMSLP-->
                             <a href="https://imslp.org/wiki/Sehnsucht_(Portes%2C_Antoine)#tabArrTrans" title="Sehnsucht (Portes, Antoine) - IMSLP" target="_blank" type="text/html" rel="external">IMSLP</a><!--
                             YouTube-->
@@ -163,15 +324,41 @@
                             Musescore-->
                             | <a href="https://musescore.com/antoineportes/sehnsucht-for-strings" title="Sehnsucht for Strings  (2020) Sheet music for Strings Group (String Ensemble) | Musescore.com" target="_blank" type="text/html" rel="external">Musescore</a>
                     </p>
+
                     <!--Petit thème bucolique-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/526323618&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="petit_theme_bucolique" preload="true">
+                        <source src="https://github.com/antoineportes/solo_chamber/raw/main/Antoine%20Portes%20%20-%20Petit%20th%C3%A8me%20bucolique.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="petit_theme_bucolique-pButton"></div>
+                            <div class="timeline" id="petit_theme_bucolique-timeline">
+                                <div class="playhead" id="petit_theme_bucolique-playhead"></div>
+                                <span class='worktitle'>Petit thème bucolique</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/solo_chamber/petit_theme_bucolique.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2018
                     </p>
+
                     <!--Romantisches Stück-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/315699173&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="romantisches_stuck" preload="true">
+                        <source src="https://github.com/antoineportes/solo_chamber/raw/main/Antoine%20Portes%20-%20Romantisches%20St%C3%BCck.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="romantisches_stuck-pButton"></div>
+                            <div class="timeline" id="romantisches_stuck-timeline">
+                                <div class="playhead" id="romantisches_stuck-playhead"></div>
+                                <span class='worktitle'>Romantisches Stück</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/solo_chamber/romantisches_stuck.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2017 | éditeur&nbsp;: Virtuel Audio | extrait de la trilogie <i>Le jour où le sud a gagné
                             sa liberté</i>
@@ -185,18 +372,58 @@
                             Musescore-->
                             | <a href="https://musescore.com/antoineportes/romantisches-stuck" title="Antoine Portes - Romantisches Stück (2017) Sheet music for Piano (Solo) | Musescore.com" target="_blank" type="text/html" rel="external">Musescore</a>
                     </p>
+
                     <!--Fata fugantes-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/341452355&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/341452362&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <!--1. Vespéral-->
+                    <audio id="fata_fugantes_1_vesperal" preload="true">
+                        <source src="https://github.com/antoineportes/solo_chamber/raw/main/Antoine%20Portes%20-%20Fata%20Fugantes%20-%20I.%20Vesp%C3%A9ral%20%5Bremix%202020%5D.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="fata_fugantes_1_vesperal-pButton"></div>
+                            <div class="timeline" id="fata_fugantes_1_vesperal-timeline">
+                                <div class="playhead" id="fata_fugantes_1_vesperal-playhead"></div>
+                                <span class='worktitle'>Fata fugantes&nbsp;: I. Vespéral</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/solo_chamber/fata_fugantes_1_vesperal.js" type="text/javascript"></script>
+                    <!--2. Exposition-->
+                    <audio id="fata_fugantes_2_exposition" preload="true">
+                        <source src="https://github.com/antoineportes/solo_chamber/raw/main/Antoine%20Portes%20-%20Fata%20Fugantes%20-%20II.%20Exposition.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="fata_fugantes_2_exposition-pButton"></div>
+                            <div class="timeline" id="fata_fugantes_2_exposition-timeline">
+                                <div class="playhead" id="fata_fugantes_2_exposition-playhead"></div>
+                                <span class='worktitle'>Fata fugantes&nbsp;: II. Exposition</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/solo_chamber/fata_fugantes_2_exposition.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2017 | éditeur&nbsp;: Virtuel Audio | <b>composés à l'image</b> pour la trilogie <i>Le
                             jour où le sud a gagné sa liberté</i>
                     </p>
+
                     <!--Menuet d-Moll-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/512773170&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="menuet_d-moll" preload="true">
+                        <source src="https://github.com/antoineportes/solo_chamber/raw/main/Antoine%20Portes%20-%20Menuet%20d-Moll%20%5Bremix%202018%5D.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="menuet_d-moll-pButton"></div>
+                            <div class="timeline" id="menuet_d-moll-timeline">
+                                <div class="playhead" id="menuet_d-moll-playhead"></div>
+                                <span class='worktitle'>Menuet d-Moll</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/solo_chamber/menuet_d-moll.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2017 | éditeur&nbsp;: Virtuel Audio
                         <br />
@@ -208,13 +435,27 @@
                     </p>
                 </div>
             </div>
+
+
             <!--Orchestral | Concertante-->
             <div class="genre">
                 <h4 class="genreTitle">Musique orchestrale & concertante</h4>
                 <div class="genreContent">
                     <!--Ragged Variations-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/820134670&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="ragged_variations" preload="true">
+                        <source src="https://github.com/antoineportes/orchestral_concertante/raw/main/Antoine%20Portes%20-%20Ragged%20Variations%20%5Bremix%202021%5D.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="ragged_variations-pButton"></div>
+                            <div class="timeline" id="ragged_variations-timeline">
+                                <div class="playhead" id="ragged_variations-playhead"></div>
+                                <span class='worktitle'>Ragged Variations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/orchestral_concertante/ragged_variations.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2020
                         <br />
@@ -228,36 +469,116 @@
                         Musescore-->
                         | <a href="https://musescore.com/antoineportes/antoine-portes-ragged-variations-2020" title="Antoine Portes - Ragged Variations  (2020) Sheet music for Piano, Trombone, Flute, Drum Group & more instruments (Chamber Orchestra) | Musescore.com" target="_blank" type="text/html" rel="external">Musescore</a>
                     </p>
+
                     <!--Petit thème tragique-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/536181804&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="petit_theme_tragique" preload="true">
+                        <source src="https://github.com/antoineportes/orchestral_concertante/raw/main/Antoine%20Portes%20-%20Petit%20th%C3%A8me%20tragique%20%5Bremix%202020%5D.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="petit_theme_tragique-pButton"></div>
+                            <div class="timeline" id="petit_theme_tragique-timeline">
+                                <div class="playhead" id="petit_theme_tragique-playhead"></div>
+                                <span class='worktitle'>Petit thème tragique</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/orchestral_concertante/petit_theme_tragique.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2018 | éditeur&nbsp;: Virtuel Audio | <b>composé à l'image</b> pour le film <i>Je dis
                             donc je suis</i>
                     </p>
+
                     <!--A British too far-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/908404522&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="a_british_too_far" preload="true">
+                        <source src="https://github.com/antoineportes/orchestral_concertante/raw/main/Antoine%20Portes%20-%20A%20British%20too%20far.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="a_british_too_far-pButton"></div>
+                            <div class="timeline" id="a_british_too_far-timeline">
+                                <div class="playhead" id="a_british_too_far-playhead"></div>
+                                <span class='worktitle'>A British too far</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/orchestral_concertante/a_british_too_far.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2020 | <b>composé à l'image</b>
                     </p>
+
                     <!--In Stahlgewittern-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/520770408&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="in_stahlgewittern" preload="true">
+                        <source src="https://github.com/antoineportes/orchestral_concertante/raw/main/Antoine%20Portes%20-%20In%20Stahlgewittern.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="in_stahlgewittern-pButton"></div>
+                            <div class="timeline" id="in_stahlgewittern-timeline">
+                                <div class="playhead" id="in_stahlgewittern-playhead"></div>
+                                <span class='worktitle'>In Stahlgewittern</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/orchestral_concertante/in_stahlgewittern.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2018 | extrait du film <i>Grands sabotages de la Résistance</i>
                     </p>
+
                     <!--Paths of Savagery-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338955188&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+                    <audio id="paths_of_savagery" preload="true">
+                        <source src="https://github.com/antoineportes/orchestral_concertante/raw/main/Antoine%20Portes%20-%20Paths%20of%20Savagery.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="paths_of_savagery-pButton"></div>
+                            <div class="timeline" id="paths_of_savagery-timeline">
+                                <div class="playhead" id="paths_of_savagery-playhead"></div>
+                                <span class='worktitle'>Paths of Savagery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/orchestral_concertante/paths_of_savagery.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2017 | éditeur&nbsp;: Virtuel Audio
                     </p>
-                    <!--From war to worse + History blowing-->
-                    <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/341453511&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
-                        <iframe scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343959166&color=%23585145&inverse=true&auto_play=false&show_user=false"></iframe>
+
+                    <!--Le jour où-->
+                    <!--From war to worse-->
+                    <audio id="from_war_to_worse" preload="true">
+                        <source src="https://github.com/antoineportes/orchestral_concertante/raw/main/Antoine%20Portes%20-%20From%20war%20to%20worse%20%5Bfirst%20version%5D.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="from_war_to_worse-pButton"></div>
+                            <div class="timeline" id="from_war_to_worse-timeline">
+                                <div class="playhead" id="from_war_to_worse-playhead"></div>
+                                <span class='worktitle'>From war to worse</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/orchestral_concertante/from_war_to_worse.js" type="text/javascript"></script>
+
+                    <!--History blowing-->
+                    <audio id="history_blowing" preload="true">
+                        <source src="https://github.com/antoineportes/orchestral_concertante/raw/main/Antoine%20Portes%20-%20History%20blowing%20%5Bthird%20version%5D.ogg">
+                    </audio>
+                    <!--player-->
+                    <div class="player-wrapper">
+                        <div class="audioplayer">
+                            <div class="play" id="history_blowing-pButton"></div>
+                            <div class="timeline" id="history_blowing-timeline">
+                                <div class="playhead" id="history_blowing-playhead"></div>
+                                <span class='worktitle'>History blowing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="assets/js/musicplayers/orchestral_concertante/history_blowing.js" type="text/javascript"></script>
                     <p class="notice">
                         &copy; 2017 | éditeur&nbsp;: Virtuel Audio | <b>composés à l'image</b> pour la trilogie <i>Le
                             jour où le sud a gagné sa liberté</i>
