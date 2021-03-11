@@ -1,0 +1,84 @@
+.player-wrapper{
+	width: 100%;
+    max-width: 250px;
+	clear: none;
+	position: relative;
+	display: inline-block;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: none;
+}
+/*Container for audio player*/
+.audioplayer{
+	width: 100%;
+    max-width: 250px;
+	clear: none;
+	position: relative;
+	height: 20px;
+	margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border-style: solid;
+    border-color: rgb(50, 50, 50);
+    border-width: 1px;
+    border-radius: 10px 10px 10px 10px;
+	background-color: black;
+}
+/* Play/Pause Button */
+.play, .pause{
+	height:20px;
+	width: 20px;
+	border: none;
+	float:left;
+	outline:none;
+	cursor: pointer;
+
+}
+/*Classes for play/pause button background*/
+.play{
+	background: url('../../assets/png/audioplayers/play.png');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.pause{background: url('../../assets/png/audioplayers/pause.png');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.timeline{
+	width: calc(100% - 24px);
+	height: 16px;
+	background-color: rgb(15, 15, 15);
+	float: left;
+	border-radius: 10px 10px 10px 10px;
+	margin-top: 2px;
+	margin-left: 2px;
+	z-index: -2;
+}
+.worktitle{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 44px;
+	top: 3px;
+	color: lightgrey;
+	z-index: 0;
+	font-family: "Century Gothic", Century, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+/*Grabable Playhead*/
+.playhead{
+	position: relative;
+	cursor: pointer;
+	width: 12px;
+	height: 12px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+	border-radius: 50%;
+	margin-top: 1px;
+	background: wheat;
+	z-index: 100;
+}
