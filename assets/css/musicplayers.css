@@ -12,6 +12,7 @@
 .audioplayer{
 	width: 100%;
     max-width: 250px;
+	overflow: hidden;
 	clear: none;
 	position: relative;
 	height: 20px;
