@@ -463,6 +463,9 @@ div.linx{
     width: calc(50% - 24px);
     background-color: rgb(4, 4, 4);
 }
+div#linxOddLast{
+    width: calc(100% - 24px)
+}
 h4.linxTitle{
     color: rgb(175, 159, 131);
     margin: 0 0 6px 0;
@@ -475,6 +478,9 @@ p.linxContent{
     text-justify: inter-character;
     font-size: 0.85rem;
     text-indent: 1rem;
+}
+p.noIndent{
+    text-indent: 0;
 }
 p.linxContent a{
     text-decoration: none;
