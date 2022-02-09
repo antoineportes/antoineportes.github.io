@@ -16,7 +16,7 @@ body, html{
 body::-webkit-scrollbar{
     width: 12px;
     position: fixed;
-    z-index: 1100;
+    z-index: 2;
 }
 body::-webkit-scrollbar-track{
     background-color: rgb(33, 33, 33);
@@ -32,7 +32,7 @@ span{
     border: none;
     padding: 0 0 0 0;
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
     display: block;
 }
 h4{
@@ -45,7 +45,7 @@ h4{
     background-color: black;
     width: 100%;
     max-height: 36px;
-    z-index: 1000;
+    z-index: 2;
     position: fixed;
     top: 0;
 }
@@ -115,7 +115,7 @@ h4{
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1100;
+    z-index: 2;
     margin: 0 24px 0 0;
     border: none;
     padding: 0 0 0 0;
@@ -190,7 +190,8 @@ h4{
 }
 /*CONTENT*/
 div.section{
-    padding: 36px 0 0 0;
+    padding: 36px 0 36px 0;
+    margin: 0 0 0 0;
     min-height: calc(100% - 36px);
     overflow: hidden;
     overflow-wrap: break-word;
@@ -206,7 +207,7 @@ h3.sectionTitle{
     font-size: 1.75rem;
     letter-spacing: 0.33rem;
 }
-.section p:not(.notice){
+.section p:not(.notice, .discNotice){
     color: lightgrey;
 }
 p.notice{
@@ -224,11 +225,11 @@ p.notice a{
 div#Sounds{
     box-shadow: 0 -15px 60px 10px black;
     position: relative;
-    z-index: 50;
+    z-index: 1;
 }
 div.section:not(#Sounds){
     position: relative;
-    z-index: 100;
+    z-index: 1;
 }
 p.notice a:link, p.notice a:visited{
     color: rgb(175, 159, 131);
@@ -265,19 +266,248 @@ div.genreContent{
     margin: 0 0 0 0;
     padding: 0 0 0 6px;
 }
-/*
-iframe{
-    width: 100%;
-    max-width: 250px;
-    height: 20px;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    border-style: solid;
-    border-color: rgb(50, 50, 50);
-    border-width: 1px;
-    border-radius: 10px 10px 10px 10px;
+div.discography{
+    margin:  6px 6px 6px 6px;
+    padding: 6px 6px 6px 6px;
+    display: block;
+    background-color: rgb(4, 4, 4);
+    float: left;
+    width: calc(100% - 24px);
 }
-*/
+div.discBox{
+    margin: 0 0 0 0;
+    border: none;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+}
+.discBox::-webkit-scrollbar{
+    height: 12px;
+    width: 12px;
+}
+.discBox::-webkit-scrollbar-track{
+    background-color: rgb(33, 33, 33);
+}
+.discBox::-webkit-scrollbar-thumb{
+    background-color: rgb(175, 159, 131);
+}
+.discBox::-webkit-scrollbar-thumb:hover{
+    background-color: wheat;
+}
+div.discItem{
+    padding: 6px 6px 6px 6px;
+    /*min-width: 200px;*/
+    height: 100%;
+    max-width: 225px;
+}
+h5.discTitle{
+    margin: 0 0 0 0;
+    font-size: .85rem;
+}
+span.discName{
+    color: wheat;
+    font-weight: bold;
+    font-style: normal;
+}
+span.discType{
+    color: dimgrey;
+    font-weight: 500;
+    font-style: italic;
+}
+p.discNotice{
+    display: block;
+    width: 100%;
+    margin: 0 0 6px 0;
+    color: dimgrey;
+    font-size: 0.75rem;
+    text-align: left;
+}
+div.discitem a{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+div.discItem img {
+    width: 100%;
+    min-width: 175px;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    filter: saturate(0%) brightness(75%) contrast(110%) sepia(50%);
+    -moz-filter: saturate(0%) brightness(75%) contrast(11.%) sepia(50%);
+    -webkit-filter: saturate(0%) brightness(75%) contrast(110%) sepia(50%);
+    transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+}
+div.discItem img:hover{
+    filter: none;
+    -moz-filter: none;
+    -webkit-filter: none;
+    transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+}
+table.discDescription {
+    max-width: 100%;
+    margin: 0 0 0 0;
+    border: none;
+    padding: 0 0 0 0;
+    color: dimgrey;
+    font-size: 0.75rem;
+    border-collapse: collapse;
+}
+table.discDescription tr, table.filmDescription td{
+    margin: 0 0 0 0;
+    border: none;
+}
+td.discLeft, td.discRight{
+    vertical-align: middle;
+}
+td.discLeft{
+    text-align: right;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    padding: 0 0 0 0;
+}
+td.discRight{
+    text-align: left;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    padding: 0 0 0 0.25rem;
+}
+td.discRight a:link, td.discRight a:visited{
+    color: rgb(175, 159, 131);
+}
+td.discRight a:hover, td.discRight a:active{
+    color: wheat;
+}
+.discCopyrights{
+    font-weight: normal;
+    font-size: .85rem;
+}
+
+/*Discography Modal Slideshow*/
+.disc-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    /*padding: 36px 36px 36px 36px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+.disc-modal-content{
+    position: relative;
+    z-index: 4;
+    background-color: #000000;
+    width: clac(100% - 36px);
+    margin: 18px 18px 18px 18px;
+    border: .5rem solid rgb(4, 4, 4);
+    color: lightgrey;
+}
+.disc-modal-content p{
+    display: block;
+    width: 100%;
+    color: rgb(175, 159, 131);
+    font-size: 1rem;
+    text-align: center;
+    margin: .75rem 0 .75rem 0;
+}
+.disc-modal-close{
+    position: absolute;
+    margin: auto;
+    z-index: 5;
+    color: dimgrey;
+    top: calc(18px + .5rem);
+    right: calc(18px + .5rem);
+    width: 28px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 14px;
+}
+.disc-modal-close:hover, .discModalClose:focus {
+  color: wheat;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.Artwork {
+    display: none;
+    position: relative;
+    margin: auto;
+}
+.Artwork img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 75vh;
+}
+@media screen and (min-height: 1300px){
+    .Artwork img{
+        max-width: 1000;
+    }
+}
+.discModalPrev, .discModalNext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  width: auto;
+  padding: 3vw;
+  margin-top: -50px;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.discModalNext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.discModalPrev:hover, .discModalNext:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: wheat;
+}
+.artworkDescription {
+    width: auto;
+    color: lightgrey;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: .75rem;
+    padding: 8px;
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: 4;
+    top: 0;
+    text-align: center;
+}
+
 
 /*About*/
 h4.aboutTitle{
@@ -345,9 +575,9 @@ div.filmItem img{
     height: auto;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+    filter: saturate(0%) brightness(75%) contrast(110%) sepia(50%);
+    -moz-filter: saturate(0%) brightness(75%) contrast(110%) sepia(50%);
+    -webkit-filter: saturate(0%) brightness(75%) contrast(110%) sepia(50%);
     transition-duration: 0.25s;
     -moz-transition-duration: 0.25s;
     -webkit-transition-duration: 0.25s;
@@ -524,7 +754,7 @@ div.social{
     position: fixed;
     bottom: 0;
     left: 50vw;
-    z-index: 1000;
+    z-index: 2;
     width: auto;
     background-color: rgba(0,0,0,0.8);
     transform: translateX(-50%);
@@ -563,7 +793,7 @@ div.social img:hover{
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 100000; /* Sit on top */
+    z-index: 3; /* Sit on top */
     padding-top: 15vh; /* Location of the box */
     left: 0;
     top: 0;
@@ -614,6 +844,8 @@ div.social img:hover{
 }
 /* The Close Button */
 .modal-close{
+    position: relative;
+    z-index: 4;
     color: dimgrey;
     float: right;
     font-size: 28px;
