@@ -1,0 +1,45 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-color: black;
+    background-image: url("../png/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Verdana, sans-serif;
+    overflow-y: auto;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(175, 159, 131) rgb(33, 33, 33);
+}
+.section{
+    background-color: hsla(0, 0%, 0%, 0.75);
+    margin: 12px 12px 12px 12px;
+    width: calc(100% - 64px);
+    padding: 12px 20px 12px 20px;
+}
+h2{
+    text-align: center;
+    color: #ffd72b;
+    font-weight: normal;
+    text-shadow:
+        -1px -1px 0 #d85220,
+        1px -1px 0 #d85220,
+        -1px 1px 0 #d85220,
+        1px 1px 0 #d85220;
+    margin: 0;
+    padding: 0;
+}
+.poem, .bio{
+    color: hsl(26, 5%, 85%);
+    font-size: .85rem;
+    padding: 0;
+}
+.poem{
+    margin: 0 0 12px 24px;
+}
+.bio{
+    margin: 0;
+}
