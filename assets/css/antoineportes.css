@@ -712,14 +712,14 @@ p.linxContent{
 p.noIndent{
     text-indent: 0;
 }
-p.linxContent a{
+p.linxContent a, p.bioContent a{
     text-decoration: none;
     font-weight: normal;
 }
-p.linxContent a:link, p.linxContent a:visited{
+p.linxContent a:link, p.linxContent a:visited, p.bioContent a:link, p.bioContent a:visited{
     color: rgb(175, 159, 131);
 }
-p.linxContent a:hover, p.linxContent a:active{
+p.linxContent a:hover, p.linxContent a:active, p.bioContent a:hover, p.bioContent a:active{
     color: wheat;
 }
 @media screen and (max-width: 900px){

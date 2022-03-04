@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ingirumimusnocte — Leitmotiv | Player</title>
+        <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 20px;
+        }
+        .player-wrapper{
+            width: 100%;
+            clear: none;
+            position: relative;
+            display: inline-block;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            border: none;
+        }
+        /*Container for audio player*/
+        .audioplayer{
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            clear: none;
+            position: relative;
+            height: 20px;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            border-style: solid;
+            border-color: #d85220;
+            border-width: 1px;
+            border-radius: 10px 10px 10px 10px;
+            background-color: rgba(0, 0, 0, 0.185);
+        }
+        /* Play/Pause Button */
+        .play, .pause{
+            height:18px;
+            width: 20px;
+            border: none;
+            float:left;
+            outline:none;
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: -1px;
+        
+        }
+        /*Classes for play/pause button background*/
+        .play{
+            background: url('../png/play.png');
+            background-size: 19px 19px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .pause{background: url('../png/pause.png');
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .timeline{
+            width: calc(100% - 24px);
+            height: 16px;
+            background-color: hsla(0, 16%, 6%, 0.8);
+            cursor: pointer;
+            float: left;
+            border-radius: 10px 10px 10px 10px;
+            margin-top: 1px;
+            margin-left: 2px;
+            z-index: -2;
+        }
+        .worktitle{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            left: 44px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: lightgrey;
+            z-index: 0;
+            font-family: Verdana, sans-serif;
+            font-size: 11px;
+            line-height: 14px;
+        }
+        /*Grabable Playhead*/
+        .playhead{
+            position: relative;
+            width: 14px;
+            height: 14px;
+            box-sizing: border-box;
+            border-style: solid;
+            border-color: #ffd72b;
+            border-width: 2px;
+            border-radius: 50%;
+            margin: 1px 0 0 0;
+            background: #ffd72b;
+            z-index: 100;
+        }
+        </style>
+    </head>
+
+    <body>
+        <audio id="ingirumimusnocte-leitmotiv" preload="none">
+            <source src="../ogg/ingirumimusnocte-leitmotiv.ogg" type="audio/ogg" />
+            <source src="../aac/ingirumimusnocte-leitmotiv.aac" type="audio/mpeg" />
+        </audio>
+        <!--player-->
+        <div class="player-wrapper">
+            <div class="audioplayer">
+                <div class="play" id="ingirumimusnocte-leitmotiv-pButton"></div>
+                <div class="timeline" id="ingirumimusnocte-leitmotiv-timeline">
+                    <div class="playhead" id="ingirumimusnocte-leitmotiv-playhead"></div>
+                    <span class='worktitle'>Leitmotiv — <i>ingirumimusnocte</i></span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                var music = document.getElementById('ingirumimusnocte-leitmotiv'); // id for audio element
+                var duration; // Duration of audio clip
+                var pButton = document.getElementById('ingirumimusnocte-leitmotiv-pButton'); // play button
+                var playhead = document.getElementById('ingirumimusnocte-leitmotiv-playhead'); // playhead
+                var timeline = document.getElementById('ingirumimusnocte-leitmotiv-timeline'); // timeline
+
+                // timeline width adjusted for playhead
+                var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+                // play button event listenter
+                pButton.addEventListener("click", play);
+
+                // timeupdate event listener
+                music.addEventListener("timeupdate", timeUpdate, false);
+
+                // makes timeline clickable
+                timeline.addEventListener("click", function(event) {
+                    moveplayhead(event);
+                    music.currentTime = duration * clickPercent(event);
+                }, false);
+
+                // returns click as decimal (.77) of the total timelineWidth
+                function clickPercent(event) {
+                    return (event.clientX - getPosition(timeline)) / timelineWidth;
+                }
+
+                // makes playhead draggable
+                playhead.addEventListener('mousedown', mouseDown, false);
+                window.addEventListener('mouseup', mouseUp, false);
+
+                // Boolean value so that audio position is updated only when the playhead is released
+                var onplayhead = false;
+
+                // mouseDown EventListener
+                function mouseDown() {
+                    onplayhead = true;
+                    window.addEventListener('mousemove', moveplayhead, true);
+                    music.removeEventListener('timeupdate', timeUpdate, false);
+                }
+
+                // mouseUp EventListener
+                // getting input from all mouse clicks
+                function mouseUp(event) {
+                    if (onplayhead == true) {
+                        moveplayhead(event);
+                        window.removeEventListener('mousemove', moveplayhead, true);
+                        // change current time
+                        music.currentTime = duration * clickPercent(event);
+                        music.addEventListener('timeupdate', timeUpdate, false);
+                    }
+                    onplayhead = false;
+                }
+                // mousemove EventListener
+                // Moves playhead as user drags
+                function moveplayhead(event) {
+                    var newMargLeft = event.clientX - getPosition(timeline);
+
+                    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+                        playhead.style.marginLeft = newMargLeft + "px";
+                    }
+                    if (newMargLeft < 0) {
+                        playhead.style.marginLeft = "0px";
+                    }
+                    if (newMargLeft > timelineWidth) {
+                        playhead.style.marginLeft = timelineWidth + "px";
+                    }
+                }
+
+                // timeUpdate
+                // Synchronizes playhead position with current point in audio
+                function timeUpdate() {
+                    var playPercent = timelineWidth * (music.currentTime / duration);
+                    playhead.style.marginLeft = playPercent + "px";
+                    if (music.currentTime == duration) {
+                        pButton.className = "";
+                        pButton.className = "play";
+                    }
+                }
+                
+                //Play and Pause
+                function play() {
+                    // start music
+                    if (music.paused) {
+                        music.play();
+                        // remove play, add pause
+                        pButton.className = "";
+                        pButton.className = "pause";
+                    }
+                    else { // pause music
+                        music.pause();
+                        // remove pause, add play
+                        pButton.className = "";
+                        pButton.className = "play";
+                    }
+                }
+                
+                // Gets audio file duration
+                music.addEventListener("canplaythrough", function() {
+                    duration = music.duration;
+                }, false);
+                
+                // getPosition
+                // Returns elements left position relative to top-left of viewport
+                function getPosition(el) {
+                    return el.getBoundingClientRect().left;
+                }
+                /* DOMContentLoaded*/
+            });
+        </script>
+    </body>
+
+</html>
